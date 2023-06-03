@@ -17,7 +17,7 @@ RUN apt-get update \
     &&     rm -rf /var/lib/{apt,dpkg,cache,log}/ \
     &&     a2enmod rewrite
 
-RUN cp config/appprofile.example.php config/appprofile.php && \
+RUN cp ./config/appprofile.example.php ./config/appprofile.php && \
     chmod -R 755 storage && \
     chmod -R 777  /usr/src/sspanel/storage/framework/smarty/compile/ && \
     chmod +x /docker-entrypoint.sh && \
