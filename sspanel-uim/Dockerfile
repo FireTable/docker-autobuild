@@ -1,6 +1,6 @@
 FROM php:8.0.2-apache
 
-COPY SSPanel-Uim/. /usr/src/sspanel/
+COPY SSPanel-Uim/ /usr/src/sspanel/
 COPY rootfs/ /
 ENV DB_DATABASE=sspanel
 ENV DB_USERNAME=root
